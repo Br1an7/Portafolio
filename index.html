@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional de [Tu Nombre], desarrollador web.">
+    <meta name="keywords" content="portafolio, desarrollador web, proyectos, habilidades, contacto">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Botón para cambiar de tema -->
+    <button id="themeToggle">Cambiar Tema</button>
+
+    <header>
+        <h1>Mi Portafolio</h1>
+        <p>Desarrollador Web</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2>Sobre mí</h2>
+            <div class="content">
+                <img src="mi-foto.jpg" alt="Mi Foto">
+                <p>Descripción sobre mí.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Proyectos</h2>
+            <div class="content">
+                <div class="project">
+                    <a href="proyecto1-grande.jpg" data-lightbox="projects"><img src="proyecto1.jpg" alt="Proyecto 1"></a>
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción del proyecto.</p>
+                </div>
+                <div class="project">
+                    <a href="proyecto2-grande.jpg" data-lightbox="projects"><img src="proyecto2.jpg" alt="Proyecto 2"></a>
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción del proyecto.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Habilidades</h2>
+            <div class="content">
+                <div class="skill">
+                    <h3>HTML</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>CSS</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section">
+            <h2>Blog</h2>
+            <div class="content">
+                <article class="post">
+                    <h3>Último Proyecto: App de Gestión de Tareas</h3>
+                    <p>En este artículo, explico el proceso de desarrollo de una aplicación...</p>
+                    <a href="post1.html">Leer más</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contacto</h2>
+            <div class="content">
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Tu Nombre" required>
+                    <input type="email" id="email" placeholder="Tu Correo" required>
+                    <textarea id="message" placeholder="Tu Mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+                <p id="formMessage"></p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <a href="https://github.com/tuUsuario" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/tuUsuario" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+    </footer>
+
+    <button id="backToTop">↑</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="code.js"></script>
+
+</body>
+</html>
